@@ -1,0 +1,29 @@
+def chatbot():
+    print(" bot : Hello! I am a rule-based chatbot.")
+    print(" bot : Type 'bye' to exit.\n")
+
+    while True:
+        user_input = input("You: ") .lower()
+
+        if user_input in ["hi", "hello", "hey"]:
+            print(" Bot: Hello! How can I help you?")
+
+        elif "how are you" in user_input:
+            print("Bot:  I’m doing great! Thanks for asking ")
+
+        elif "what can you do" in user_input:
+            print("Bot: I can chat with you and answer simple questions.")
+
+        elif "tell me a joke" in user_input:
+            print(" Bot: Why don’t robots get tired? Because they recharge!")
+
+        elif user_input in ["bye", "exit"]:
+            print(" Bot: Goodbye! Have a great day 😊")
+            break
+
+        else:
+            print(" Bot: Sorry, I didn't understand that.")
+
+if __name__ == "__main__":
+    chatbot()
+    
